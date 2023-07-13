@@ -30,8 +30,12 @@ require_once("config.php");
 // echo $aluno
 
 // atualizando o registro de uma informação na tabela
+// $usuario = new Usuario();
+// $usuario->loadById(3);
+// $usuario->update("professor", "@dlaksj09");
+// echo $usuario;
+
 $usuario = new Usuario();
 $usuario->loadById(3);
-$usuario->update("professor", "@dlaksj09");
-echo $usuario;
+$usuario->delete();
 ?>
